@@ -1,14 +1,29 @@
 pipeline {
     agent none
     stages {
-        stage('build') {
+        stage('version') {
             steps {
-                echo "Hello"
+                echo "version created"
             }
         }    
-        stage('Build and Test') {
+        stage('Tag') {
             steps {
-                echo "Build"
+                echo "Tagged"
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "Build successful"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Tested"
+            }
+        }
+        stage('Upload') {
+            steps {
+                echo "uploaded"
             }
         }
     }
