@@ -1,9 +1,9 @@
 pipeline {
     agent none
     stages {
-        stage('version') {
+        stage('Version') {
             steps {
-                echo "version created"
+                echo "Version created"
             }
         }    
         stage('Tag') {
